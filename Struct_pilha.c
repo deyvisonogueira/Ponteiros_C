@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h> //importante para alocação de memória 
+#include <stdlib.h> //importante para alocaÃ§Ã£o de memÃ³ria 
 #define MAX 10
 
 typedef int tdado;
@@ -14,7 +14,7 @@ void inicializa(tpilha *p){
 }
 //___________________________
 int push(tpilha *p, tdado x){ 
-	if (p->topo == MAX -1); // está cheio 
+	if (p->topo == MAX -1) // estÃ¡ cheio 
 	return 0;
 	p->topo++;
 	p->pilha[p->topo]=x;
@@ -28,7 +28,7 @@ tdado pop (tpilha *p){
 	return aux;		
 }
 //___________________________
-int isEmpty(tpilha p){ // p passagem por valor (*p = por referência)
+int isEmpty(tpilha p){ // p passagem por valor (*p = por referÃªncia)
 	if(p.topo == -1)
 	return 1;
 	else
@@ -38,7 +38,7 @@ int isEmpty(tpilha p){ // p passagem por valor (*p = por referência)
 void mostraPilha(tpilha p){
 	 while(p.topo!=-1){
 	 	printf("%d | ", p.pilha[p.topo]); //mostra o valor do topo
-	 	p.topo--; //desce a posição
+	 	p.topo--; //desce a posiÃ§Ã£o
 	 }// fim while
 	 printf("\n");
 }
@@ -58,7 +58,7 @@ int main(){
 	tpilha p1;
 	tdado x;
 	int op; //receber o retorno do menu
-	inicializa(&p1); //& trazendo o endereço de memória
+	inicializa(&p1); //& trazendo o endereÃ§o de memÃ³ria
 	do{
 		mostraPilha(p1);
 		printf("Topo: %d\n"); //ver valor do topo
